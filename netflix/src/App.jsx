@@ -1,23 +1,18 @@
-
-
-import './App.css'
-import Footer from './Components/Footer/Footer'
-import Header from './Components/Header/Header'
+import "./App.css";
+import Banner from "./Components/Banner/Banner";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
 
 function App() {
-  
   return (
     <>
-      
       <Header />
-      <br />
-      <br />
-      <br />
-      <br />
-      
+     
+      <Banner />
+     
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
