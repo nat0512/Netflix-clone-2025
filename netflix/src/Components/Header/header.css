@@ -1,0 +1,53 @@
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  background-color: transparent;
+  height: 10vh;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+  /* background-color: red; */
+  top: 0;
+  position: sticky;
+}
+.header-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_left {
+  display: flex;
+  list-style: none;
+}
+
+
+
+.header_left ul{
+    /* width: 140%; */
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    height: 10vh;
+    width: 700px; 
+     /* background-color: lightblue; */
+}
+
+
+
+.header_right ul{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+     /* background-color: lightgreen;  */
+    list-style: none;
+    cursor: pointer;
+
+}
