@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../../utils/axios"; // your configured instance
 import "./row.css";
+
 import movieTrailer from 'movie-trailer';
 import YouTube from 'react-youtube';
 
@@ -15,7 +16,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             try {
                 console.log( fetchUrl);
                 const request = await axios.get(fetchUrl);
-                console.log(request);
+              console.log(request);
+             
                 setMovies(request.data.results);
             } catch (error) {
                 console.log("error", error);
@@ -25,7 +27,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 
     const handleClick = (movie) => {
         if (trailerUrl) {
-            setTrailerUrl('');
+           
+          setTrailerUrl('');
         } else {
             movieTrailer(movie?.title || movie?.name || movie?.original_name)
                 .then((url) => {
